@@ -1,7 +1,7 @@
 FROM maven:3.6.3-openjdk-16-slim
 
-WORKDIR 
-COPY 
+WORKDIR /app
+COPY . /app
 
 # copy the packaged jar file into our docker image
 RUN cp target/*-SNAPSHOT.jar /app/app.jar
